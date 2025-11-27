@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ethan's Game Reviews</title>
+  </head>
+  <body>
+    <div class="top-bar">
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='review1.html'" class="no-border">Reviews</button>
+        <button onclick="location.href='about.html'" class="no-border">About</button>
+        <button onclick="location.href='contact.html'" class="no-border">Contact</button>
+        <button onclick="location.href='top-games.html'" class="no-border">Top Games</button>
+        <button onclick="location.href='upcoming-games.html'" class="no-border">Upcoming Games</button>
+      </div>
+    </div>
+    </div>
+    <h1>Game Review</h1>
+    <p>Welcome to my webpage!<br>
+      I write my video game reviews here. I write reviews about all typs of games, from AAA to indie games. If you have any game suggestions that you wish for me to review, then please go to the Contact page from the top-left drop down menu and email me or text me along with your name so I can give credit to who recommended the game to me!<br>
+      So, if you are ever curious about a game, check my page out!
+    </p>
+
+    <h3>My Game Reviews Channel</h3>
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=T6NJtC1bA4NhchWZ" target="_blank">
+      <img src="https://i.pinimg.com/originals/61/88/fb/6188fb7fe59b4da9fd82ffdbe5b4fe03.jpg" alt="Game Reviews Channel" width="300" height="auto">
+    </a>
+
+    <h3>1st Game Review Video</h3>
+    <a href="https://youtu.be/LqYkRphJFvo?si=NIjTtArZZ8r6EToO" target="_blank">
+      <img src="1st_game_review.png" alt="1st Game Review Video" width="300" height="auto">
+    </a>
+  </body>
+</html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>
