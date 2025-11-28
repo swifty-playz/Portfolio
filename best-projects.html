@@ -1,1 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Best Projects</title>
+  </head>
+  <body>
+    <div class="top-bar">
+    <div class="dropdown">
+      <button onclick="toggleMenu()" class="custom-button">Menu</button>
+      <div id="menuBox" class="dropdown-content">
+        <button onclick="location.href='index.html'" class="no-border">Main Page</button>
+        <button onclick="location.href='about-me.html'" class="no-border">About Me</button>
+        <button onclick="location.href='video-games.html'" class="no-border">Video Games</button>
+        <button onclick="location.href='websites.html'" class="no-border">Websites</button>
+        <button onclick="location.href='hacking.html'" class="no-border">Hacking</button>
+        <button onclick="location.href='contact.html'" class="no-border">Contact</button>
+      </div>
+    </div>
+    </div>
+    <h1>Best Projects</h1>
+  </body>
+</html>
 
+<script>
+  function toggleMenu() {
+    document.getElementById("menuBox").classList.toggle("show");
+  }
+</script>
