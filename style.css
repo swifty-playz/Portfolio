@@ -43,6 +43,7 @@ p {
   /*background-color: #797b7a;
   border-radius: 10px;*/
   text-align: left;
+  font-size: 15px;
 }
 
 .no-border {
@@ -113,6 +114,16 @@ h1 {
   margin-top: 30px;
   text-align: center;
   font-family: 'Courier New', monospace;
+  font-size: 30px;
+}
+
+h2 {
+  /*background-color: #797b7a;
+  border-radius: 10px;*/
+  color: #000000;
+  font-family: 'Courier New', monospace; 
+  text-align: center;
+  font-size: 25px;
 }
 
 h3 {
@@ -121,4 +132,20 @@ h3 {
   color: #000000;
   font-family: 'Courier New', monospace; 
   text-align: center;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+a {
+  color: #1f6ac2;
+  text-decoration: none;
 }
