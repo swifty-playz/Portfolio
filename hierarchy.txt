@@ -1,0 +1,5 @@
+<h1> for primary headline, main subject of the page. Only one per page
+
+<h2> for titles of major key topics
+
+<h3> for titles of topics inside a major key topics
