@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    background: white;
+    text-align: right;
+    margin: 0;
+    padding: 2em;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    li {
+        margin: 1em 0 0 0;
+        a {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+header {
+    display: flex;
+}
