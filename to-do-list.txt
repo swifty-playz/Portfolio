@@ -1,8 +1,0 @@
-- Need to find a good palette to use for designing the colors of the webpage
-- Need to work on the about me page
-- Need to work on the best projects page
-- Need to work on the contact page
-- Need to work on the hacking page
-- Need to work on the video games page
-- Need to work on the websites page
-- Need to choose a good font for the entire site
