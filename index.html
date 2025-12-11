@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -13,12 +16,12 @@
     </div>
     <nav>
       <a href=# class="menu-open hide-desktop">
-        <img src="" alt="Open menu button">
+        <img src="open-menu-button.png" alt="Open menu button">
       </a>
       <ul>
         <li class="hide-desktop">
           <a href=# class="menu-close">
-            <img src="" alt="Close menu button">
+            <img src="close-menu-button.png" alt="Close menu button">
           </a>
         </li>
         <li><a href=#>Home</a></li>
@@ -31,32 +34,59 @@
 
   <main>
     <h3>Frontend Software Developer</h3>
-    <img src="" alt="Background image">
-    <h1>Welcome to My Portfolio!</h1>
-    <p>
-      I am Ethan Sikes, a hard-working computer science college student.<br>
-      Actively learning and getting better to become a capable frontend software developer. <br>
-    </p>
-    <img src="" alt="Profile image">
-    <div>
-      <a href=#>Get in Touch</a>
-      <a href=#>View Projects</a>
+
+    <div class="intro">
+      <img class="code-background" src="code-background.png" alt="Background image">
+      <div class="primary">
+        <h1>Welcome to My Portfolio!</h1>
+        <p>
+          I am Ethan Sikes, a hard-working computer science college student.<br>
+          Actively learning and getting better to become a capable frontend software developer. <br>
+        </p>
+        <img src="" alt="Profile image">
+      </div>
     </div>
-    <img src="" alt="Jumping arrow image">
-    <div>
-      <a>
-        <img src="" alt="Github button">
-      </a>
-      <a>
-        <img src="" alt="LinkedIn button">
-      </a>
-      <a>
-        <img src="" alt="Email button">
-      </a>
+
+    <div class="actions">
+      <div class="intro-buttons">
+        <a href=#>Get in Touch</a>
+        <a href=#>View Projects</a>
+      </div>
+
+      <img class="arrow" src="down-arrow.png" alt="Jumping arrow image">
+
+      <div>
+        <a>
+          <img src="github-logo.png" alt="Github button">
+        </a>
+        <a>
+          <img src="linkedin-logo.webp" alt="LinkedIn button">
+        </a>
+        <a>
+          <img src="email-logo.png" alt="Email button">
+        </a>
+      </div>
     </div>
+
   </main>
   <footer>
     
   </footer>
 </body>
 </html>
+
+<script>
+  const menu = document.querySelector('nav ul');
+  const menuBtn = document.querySelector('.menu-open');
+  const closeBtn = document.querySelector('.menu-close');
+  const arrow = document.querySelector('.arrow');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.add('open')
+  })
+  closeBtn.addEventListener('click', () => {
+    menu.classList.remove('open')
+  })
+  // make arrow bounce
+
+</script>
