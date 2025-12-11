@@ -74,9 +74,10 @@ h3 {
 
     img {
         position: fixed;
-        height: 50%;
+        height: 50vh;
         z-index: -1;
-        border-radius: 24px;
+        border-radius: 100% 0 100% 0;
+        opacity: 0.5;
     }
 
     .primary {
@@ -84,6 +85,10 @@ h3 {
 
         h1 {
             text-align: center;
+        }
+
+        img {
+            display: none;
         }
     }
 }
