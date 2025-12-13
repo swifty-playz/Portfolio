@@ -1,3 +1,7 @@
+.wrap {
+    margin: .5em;
+}
+    
 a {
     text-decoration: none;
     color: black;
@@ -20,10 +24,18 @@ nav ul {
     z-index: 999;
 
     li {
+        padding: .5em 0 0 0;
         margin: 1em 0 0 0;
         a {
             font-size: 1.5rem;
             font-weight: bold;
+        }
+
+        .menu-close {
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            margin-bottom: auto;
         }
     }
 }
@@ -34,6 +46,7 @@ header {
     background: #fefff5;
 
     .my-portfolio {
+        padding-top: .4em;
         font-size: 1.5rem;
         font-weight: bold;
     }
@@ -70,7 +83,7 @@ h3 {
 }
 
 .intro {
-    display: flex;
+    display: block;
 
     img {
         position: fixed;
@@ -83,7 +96,7 @@ h3 {
     }
 
     .primary {
-        text-align: left;
+        text-align: center;
 
         h1 {
             text-align: center;
@@ -128,19 +141,35 @@ h3 {
 }
 
 @media (min-width: 798px) {
-    body {
-        background: black;
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        background: none;
+        transform: translateX(0%);
+        position: unset;
+        padding: 1em 0 0 0;
+        height: auto;
+        width: auto;
+
+        li {
+            margin: 0 1em 0 0;
+            a {
+                font-size: 1rem;
+            }
+        }
+
     }
 }
 
 @media (min-width: 950px) {
-    body {
-        background: green;
-    }
-}
+    .code-background {
+        position: relative;
+        max-width: 950px;
+        left: 50%;
+        transform: translateX(-50%);
 
-@media (min-width: 1200px) {
-    body {
-        background: blue;
     }
 }
