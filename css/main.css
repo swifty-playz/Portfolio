@@ -167,6 +167,32 @@ h3 {
     }
 }
 
+.about {
+    text-align: center;
+
+    .tallImg {
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 225px;
+            height: 325px;
+        }
+    }
+
+    .longImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 450px;
+            height: 300px;
+        }
+    }
+}
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
