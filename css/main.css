@@ -144,6 +144,29 @@ h3 {
     text-align: center;
 }
 
+.contact {
+    text-align: center;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+
+        li {
+            a {
+                font-size: 2rem;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -174,6 +197,12 @@ h3 {
             }
         }
 
+    }
+
+    .ideals {
+        display: flex;
+        justify-content: center;
+        gap: 4em;
     }
 }
 
